@@ -1,14 +1,19 @@
-const actions = {
-    conterValue: document.querySelector('#value') = 0,
-    buttonDecrement: document.querySelector('[data-action="decrement"]'),
-    buttonIncrement: document.querySelector('[data-action="increment"]'),
+const counterEl = {
+    sub: document.querySelector('[data-action="decrement"]'),
+    add: document.querySelector('[data-action="increment"]'),
 };
-console.log(actions);
 
-actions.buttonDecrement.addEventListener('click', () => {
-    return actions.conterValue -= 1;
-});
+let counterValue = 0;
 
-actions.buttonIncrement.addEventListener('click', () => {
-    return actions.conterValue += 1;
-});
+const decrement = () => {
+    counterValue -= 1;
+    document.getElementById('value').textContent = counterValue;
+}
+
+const increment = () => {
+    counterValue += 1;
+    document.getElementById('value').textContent = counterValue;
+}
+
+counterEl.sub.addEventListener('click', decrement);
+counterEl.add.addEventListener('click', increment);
