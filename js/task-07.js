@@ -1,6 +1,8 @@
-const inputEl = document.querySelector('input');
-const minFontEl = Number(inputEl.min);
-const maxFontEl = Number(inputEl.max);
-const spanEl = document.querySelector('#text');
-console.log(minFontEl);
+const inputEl = document.querySelector('#font-size-control');
+const spanEl = document.querySelector('span#text');
 console.log(spanEl);
+
+
+inputEl.addEventListener('input', e => {
+    spanEl.style.fontSize = `${e.target.value} px`;
+});
