@@ -31,3 +31,5 @@ btnCreate.addEventListener('click', () => {
 
 
 btnDestroy.addEventListener('click', destroyBoxes);
+
+// Hello World ;)
