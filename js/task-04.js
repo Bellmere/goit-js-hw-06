@@ -3,6 +3,8 @@ const counterEl = {
     add: document.querySelector('[data-action="increment"]'),
 };
 
+const valueEl = document.querySelector('#value');
+
 let counterValue = 0;
 
 const decrement = () => {
