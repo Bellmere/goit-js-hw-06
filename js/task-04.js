@@ -9,12 +9,12 @@ let counterValue = 0;
 
 const decrement = () => {
     counterValue -= 1;
-    document.getElementById('value').textContent = counterValue;
+    valueEl.textContent = counterValue;
 }
 
 const increment = () => {
     counterValue += 1;
-    document.getElementById('value').textContent = counterValue;
+    valueEl.textContent = counterValue;
 }
 
 counterEl.sub.addEventListener('click', decrement);
